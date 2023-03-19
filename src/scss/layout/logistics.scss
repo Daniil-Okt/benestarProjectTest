@@ -1,0 +1,61 @@
+.logistics {
+    background-color: #F5F0E7;
+    &__container {
+        position: relative;
+            padding: prc(80,1200) 20px;
+            @media(max-width:320px){
+                padding: prc(80,1200) 10px;
+            }
+    }
+
+    &__content {
+        &::before {
+            background-image: url(../../images/content-decor2.svg);
+            left: 50px;
+            top: 50px;
+        }
+        &::after {
+            bottom: 20px;
+            left: 20px;
+            border-right: 0px solid $redColor;
+            border-left: 1px solid $redColor;
+            border-bottom: 1px solid $redColor;
+        }
+    }
+
+    &__row {
+        flex-direction: row-reverse;
+            @media(max-width:765px){
+                flex-direction: column-reverse;
+            }
+    }
+
+    &__img {
+        flex: 0 1 40%;
+        img {
+            max-width: 440px;
+            width: 100%;
+            @media(max-width:765px){
+                max-width: 100%;
+            }
+        }
+    }
+
+    &__body {
+        padding: 0px;
+        margin: 0px 40px 0px 0px;
+        flex: 0 1 58%;
+        align-self: center;
+        @media(max-width:765px){
+            margin: 0;
+            text-align: center;
+        }
+    }
+
+    &__header {
+    }
+
+    &__p {
+        text-align: left;
+    }
+}

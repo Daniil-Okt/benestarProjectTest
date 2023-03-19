@@ -1,0 +1,148 @@
+.project {
+    position: relative;
+    &__container {
+        position: relative;
+        padding: prc(80,1200) 20px;
+        @media(max-width:320px){
+            padding: prc(80,1200) 10px;
+        }
+    }
+
+    &__content {
+        background:none;
+        padding: 0px;
+
+        &::before {
+            display: none;
+        }
+        @media(max-width:765px){
+            background: $whiteColor;
+        }
+    }
+
+    &__swiper-pagination {
+
+    }
+    &__header-container {
+        text-align: center;
+        width: 100%;
+        @media(max-width:765px){
+            position: absolute;
+            display: block;
+            top: 30px;
+            margin: 0px auto;
+            z-index: 2;
+        }
+    }
+    &__header {
+        margin: 0 auto;
+        
+    }
+
+    &__btn-container {
+        // margin-top: -100px;
+        @media(max-width:765px){
+            margin: -10px 0px 30px 0px ;
+            z-index: 2;
+        }
+    }
+
+    &__btn-back {
+    }
+
+    &__btn-for {
+    }
+
+    &__row {
+        
+    }
+
+    &__element {
+        background-color: $whiteColor;
+        position: relative;
+        display: flex;
+        padding: 20px;
+        box-sizing: border-box;
+        width: 100%;
+        @media(max-width:765px){
+            flex-direction: column-reverse;
+        }
+
+
+        &::before {
+            position: absolute;
+            content: '';
+            background-image: url('../../images/content-decor.svg');
+            background-repeat: no-repeat;
+            max-width: 721px;
+            width: 100%;
+            max-height: 404px;
+            height: 100%;
+            
+    
+            right: 50px;
+            top: 95px;
+    
+            @media(max-width: 765px){
+                display: none;
+            }
+        }
+    }
+
+    &__swiper-body {
+        flex: 0 1 60%;
+    }
+
+    &__swiper {
+    }
+
+    &__body {
+        flex: 0 1 40%;
+    }
+
+    &__p {
+        display: inline-block;
+        margin: 70% 0px;
+        font-weight: 500;
+        @media(max-width:765px){
+            margin: 80px 0px 150px 0px;
+        }
+    }
+}
+
+.swiper-pagination {
+    height: 100%;
+    min-height: 586px;
+    width: 100%;
+    max-width: 261px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    @media(max-width:765px){
+        display: none;
+    }
+
+    &__item {
+        background: #F5F0E7;
+        padding: 30px 25px;
+        opacity: 0.6;
+        &:hover {
+            opacity: 1;
+        }
+        &:active {
+            background: $whiteColor;
+        }
+    }
+}
+
+.swiper {
+
+    &__img {
+    }
+}
+.swiper-wrapper {
+}
+.swipera-slide {
+}
+.fon-image {
+}

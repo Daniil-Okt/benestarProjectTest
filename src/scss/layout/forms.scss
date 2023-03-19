@@ -1,0 +1,85 @@
+.forms {
+    position: relative;
+    &__container {
+        position: relative;
+        z-index: 2;
+            padding: prc(80,1200) 20px;
+            @media(max-width:320px){
+                padding: prc(80,1200) 10px;
+            }
+    }
+
+    &__content {
+        width: 100%;
+        max-width: 560px;
+        padding: 50px 80px 40px 80px;
+        margin: 0 auto;
+        text-align: center;
+        background: $whiteColor;
+        @media(max-width:600px){
+            max-width: 400px;
+            padding: 50px 10px 40px 10px;
+        }
+    }
+
+    &__row {
+        display: flex;
+        flex-direction: column;
+    }   
+
+    input {
+        width: 100%;
+        max-width: 400px;
+        height: 60px;
+
+        background: $grayColor;
+        border-radius: 5px;
+        margin-bottom: 14px;
+        padding: 20px 22px;
+    }
+    &__button {
+        color: $whiteColor;
+        background: $redColor;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        width: 100%;
+        max-width: 400px;
+        height: 60px;
+        border-radius: 5px;
+        margin-bottom: 10px;
+
+        font-size: 20px;
+        line-height: 25px;
+
+        transition: all 0.3s ease  0s;
+        &:hover {
+            background: #D73141;
+            box-shadow: 0px 6px 12px rgba(125, 14, 25, 0.4);
+        }
+    }
+
+
+    &__header {
+        margin-bottom: 40px;
+        @media(max-width:1200px){
+            margin-bottom: 30px;
+        }
+        @media(max-width:380px){
+            margin-bottom: 20px;
+        }
+    }
+
+    &__priv {
+        font-family: 'Geometria';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 12px;
+        opacity: 0.4;
+        span {
+            border-bottom: 1px solid $blackColor;
+        }
+    }
+}
